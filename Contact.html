@@ -34,7 +34,8 @@
                 <img src="contact.gif" alt="This is an image" width="550" height="560" id="gifImage">
             </div>
             <div class="FormContainer">
-            <form action="#" method="POST" name="contactform" id="form">
+            <form action="#" method="POST" name="contactform" id="form" data-netlify = "true" data-netlify-recaptcha="true">
+                <input type="hidden" name="form-name" value="contactform">
                 <h2 class="headingName">Get in Touch &darr;</h2>
                 <div class="form-control">
                     <label for="name">Your Name</label><br/>
@@ -52,6 +53,7 @@
                     <label for="desc">Your Concern</label><br/>
                     <textarea name="message" id="desc" cols="21" rows="3" placeholder="Message"></textarea>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
                 <div class="form-control">
                     <input type="submit" id="btn" value="Submit">
                 </div>
